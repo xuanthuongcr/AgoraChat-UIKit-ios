@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'chat-uikit'
-    s.version          = '1.2.0'
+    s.version          = '1.2.1'
     s.summary = 'agora im UIKit'
     s.homepage = 'https://github.com/AgoraIO-Usecase/AgoraChat-UIKit-ios'
     s.description = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                   DESC
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'agora' => 'dev@agora.com' }
-    s.source = { :git => 'https://github.com/AgoraIO-Usecase/AgoraChat-UIKit-ios.git', :tag => 'chat-uikit_1.2.0'}
+    s.source = { :git => 'https://github.com/xuanthuongcr/AgoraChat-UIKit-ios.git', :tag => 'chat-uikit_1.2.0'}
     s.frameworks = 'UIKit'
     s.libraries = 'stdc++'
     s.ios.deployment_target = '11.0'
@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
         'chat-uikit/Classes/Chat/MessageCell/EaseThreadCreateCell.h',
     ]
     
-    s.static_framework = true
+    s.static_framework = false
     s.resources = ['chat-uikit/**/*.bundle','chat-uikit/**/*.xib']
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
                               'VALID_ARCHS' => 'arm64 x86_64',
