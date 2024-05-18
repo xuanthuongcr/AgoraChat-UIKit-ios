@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
         'chat-uikit/Classes/Chat/MessageCell/EaseThreadCreateCell.h',
     ]
     
-    s.static_framework = false
+    s.static_framework = true
     s.resources = ['chat-uikit/**/*.bundle','chat-uikit/**/*.xib']
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
                               'VALID_ARCHS' => 'arm64 x86_64',
